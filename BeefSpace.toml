@@ -1,0 +1,5 @@
+FileVersion = 1
+Projects = {bounty-game = {Path = "."}, SDL2 = "*"}
+
+[Workspace]
+StartupProject = "bounty-game"

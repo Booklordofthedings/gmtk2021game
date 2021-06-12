@@ -1,0 +1,125 @@
+FileVersion = 1
+LastConfig = "Release"
+LastPlatform = "Win64"
+RecentFilesList = ["src\\TestScene.bf", "src\\Background.bf", "src\\Enemier.bf", "src\\Ball.bf", "c:\\Program Files\\BeefLang\\BeefLibs\\corlib\\src\\System.bf", "c:\\Program Files\\BeefLang\\BeefLibs\\corlib\\src\\IO\\Directory.bf"]
+
+[MainWindow]
+X = 0
+Y = 0
+Width = 922
+Height = 1096
+ShowKind = "Maximized"
+
+[MainDockingFrame]
+Type = "DockingFrame"
+SplitType = 1
+
+[[MainDockingFrame.DockedWidgets]]
+RequestedWidth = 297.0
+RequestedHeight = 461.0
+Type = "TabbedView"
+
+[[MainDockingFrame.DockedWidgets.Tabs]]
+Active = true
+TabLabel = "Workspace"
+TabWidth = 111.6279
+Type = "ProjectPanel"
+
+[[MainDockingFrame.DockedWidgets]]
+RequestedWidth = 959.24
+RequestedHeight = 357.0
+SizePriority = 959.24
+Type = "DockingFrame"
+SplitType = 2
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets]]
+IsFillWidget = true
+RequestedWidth = 1774.24
+RequestedHeight = 1022.0
+SizePriority = 1022.0
+DefaultDocumentsTabbedView = true
+Type = "TabbedView"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets.Tabs]]
+TabLabel = "Background.bf"
+TabWidth = 117.4418
+Type = "SourceViewPanel"
+FilePath = "src\\Background.bf"
+CursorPos = 187
+ProjectName = "bounty-game"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets.Tabs]]
+TabLabel = "Enemier.bf"
+TabWidth = 98.83718
+Type = "SourceViewPanel"
+FilePath = "src\\Enemier.bf"
+CursorPos = 142
+ProjectName = "bounty-game"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets.Tabs]]
+TabLabel = "Ball.bf"
+TabWidth = 73.25579
+Type = "SourceViewPanel"
+FilePath = "src\\Ball.bf"
+CursorPos = 90
+ProjectName = "bounty-game"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets.Tabs]]
+Active = true
+TabLabel = "TestScene.bf"
+TabWidth = 100.9302
+Type = "SourceViewPanel"
+FilePath = "src\\TestScene.bf"
+CursorPos = 534
+ProjectName = "bounty-game"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets]]
+RequestedWidth = 250.0
+RequestedHeight = 124.0
+Type = "TabbedView"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets.Tabs]]
+TabLabel = "Find Results"
+TabWidth = 118.6046
+Type = "FindResultsPanel"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets.Tabs]]
+TabLabel = "Threads"
+TabWidth = 95.34882
+Type = "ThreadPanel"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets.Tabs]]
+TabLabel = "Memory"
+TabWidth = 96.51162
+Type = "MemoryPanel"
+Columns = 32
+RequestedWidth = 361.0
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets.Tabs]]
+TabLabel = "Watch"
+TabWidth = 86.0465
+Type = "WatchPanel"
+Columns = [{Width = 335.0}, {Width = 82.0}, {Width = 82.0}]
+Items = ["Frametime", "delta", "gCurrentScene", "SceneEntities", "SceneHuds", "DebugHud", ""]
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets.Tabs]]
+TabLabel = "Call Stack"
+TabWidth = 105.8139
+Type = "CallStackPanel"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets.Tabs]]
+TabLabel = "Immediate"
+TabWidth = 110.4651
+Type = "ImmediatePanel"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets.Tabs]]
+Active = true
+TabLabel = "Output"
+TabWidth = 89.53487
+Type = "OutputPanel"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets.Tabs]]
+TabLabel = "Auto"
+TabWidth = 76.74418
+Type = "AutoWatchPanel"
+Columns = [{Width = 284.0}, {Width = 662.0}, {Width = 82.0}]
