@@ -5,21 +5,28 @@ namespace bounty_game
 		public override void Load()
 		{
 			base.Load();
+			AddEntity(new Book());
 			AddEntity(new Image());
 		}
 	}
 	class Image : Entity
 	{
 		float timer = 0;
+		bool doDraw = true;
 		public override void Update(float delta)
 		{
 			
 			timer = timer + 1*delta;
 
-			if(timer > 1.5*1000)
+			if(timer > 1*1000)
 			{
-				Game.gCurrentScene = new TestScene();
-				Game.changedScene = true;
+				doDraw = false;
+				if(timer > 2.5*1000)
+				{
+					Game.gCurrentScene = new MenuScene();
+					Game.changedScene = true;
+				}
+				
 			}
 		}
 
@@ -35,7 +42,8 @@ namespace bounty_game
 		}
 		public override void Draw()
 		{
-			SDLManager.GetBeefTitle().Render((.)x,(.)y);
+			if(doDraw)
+				SDLManager.GetBeefTitle().Render((.)x,(.)y);
 		}
 	}
 

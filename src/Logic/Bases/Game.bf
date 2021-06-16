@@ -7,7 +7,7 @@ namespace bounty_game
 	{
 		public static Scene gCurrentScene;
 		
-
+		public static bool quit = false;
 		private static double Framtime;
 		private static float measurement = 1;
 		private static float smoothing = 0.9f;
@@ -28,7 +28,7 @@ namespace bounty_game
 		}
 		public static void Run()
 		{
-			bool quit = false;
+			
 			gCurrentScene =  new InitScene();
 			double beforeTime = (double)SDL.GetPerformanceCounter() / SDL.GetPerformanceFrequency();
 			while(!quit)
@@ -69,6 +69,8 @@ namespace bounty_game
 
 				SDL.RenderPresent(SDLManager.gGameRender);
 				Framtime =(double)SDL.GetPerformanceCounter() / SDL.GetPerformanceFrequency() - Framtime;
+
+
 				
 			}
 			delete gCurrentScene;

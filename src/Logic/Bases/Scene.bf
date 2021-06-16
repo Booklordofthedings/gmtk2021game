@@ -38,8 +38,10 @@ namespace bounty_game
 		private static float deltaT = 0;
 		private static float measurement = 1;
 		private static float smoothing = 0.9f;
+
+		public static bool reset = false;
 		
-		protected this()
+		public this()
 		{
 			Load();
 		}
@@ -60,11 +62,25 @@ namespace bounty_game
 				Scene.doDraw = !Scene.doDraw;
 			if(gCurrentKeyStates[(int)SDL2.SDL.Scancode.Key5] && gLastKeyStates[(int)SDL2.SDL.Scancode.Key5] != gCurrentKeyStates[(int)SDL2.SDL.Scancode.Key5] && gCurrentKeyStates[(int)SDL2.SDL.Scancode.RAlt])
 				runGame = !runGame;
-			if(gCurrentKeyStates[(int)SDL2.SDL.Scancode.Key6] && gLastKeyStates[(int)SDL2.SDL.Scancode.Key6] != gCurrentKeyStates[(int)SDL2.SDL.Scancode.Key6] && gCurrentKeyStates[(int)SDL2.SDL.Scancode.RAlt])
+			if(gCurrentKeyStates[(int)SDL2.SDL.Scancode.Key6] && gLastKeyStates[(int)SDL2.SDL.Scancode.Key6] != gCurrentKeyStates[(int)SDL2.SDL.Scancode.Key6] && gCurrentKeyStates[(int)SDL2.SDL.Scancode.RAlt] || reset)
 			{
+				reset = false;
 				Reset();
 			}
+			if(gCurrentKeyStates[(int)SDL2.SDL.Scancode.F] && gCurrentKeyStates[(int)SDL2.SDL.Scancode.F] != gLastKeyStates[(int)SDL2.SDL.Scancode.F])
+			{
+				if(!Game.fullscreen)
+				{
+					SDL2.SDL.SetWindowFullscreen(SDLManager.gGameWindow,(.)SDL2.SDL.WindowFlags.Fullscreen);
+					Game.fullscreen = true;
+				}
+				else
+				{
+					SDL2.SDL.SetWindowFullscreen(SDLManager.gGameWindow,0);
+					Game.fullscreen = false;
 
+				}
+			}
 			
 
 			if(runGame)
@@ -80,6 +96,8 @@ namespace bounty_game
 				delete this;
 				Game.changedScene = false;
 			}
+
+			
 		}
 		public void Draw(float delta)
 		{
@@ -87,12 +105,15 @@ namespace bounty_game
 			{
 				for(Entity e in SceneEntities)
 					e.Draw();
+
+				
 				for(Hud e in SceneHuds)
-					e.Draw();
+					e.Draw(delta);
+				
 				if(Scene.doDebug)
 				{
 					for(Hud e in DebugHud)
-						e.Draw();
+						e.Draw(delta);
 
 					SDL.SetRenderDrawColor(SDLManager.gGameRender,0xFF,0xFF,0xFF,0xFF);
 
@@ -119,7 +140,6 @@ namespace bounty_game
 			if(gCurrentKeyStates[(int)SDL2.SDL.Scancode.Key1] && gLastKeyStates[(int)SDL2.SDL.Scancode.Key1] != gCurrentKeyStates[(int)SDL2.SDL.Scancode.Key1] && gCurrentKeyStates[(int)SDL2.SDL.Scancode.RAlt])
 				DebugRenderTexture.Screenshot();
 
-			
 			
 
 		}

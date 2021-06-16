@@ -74,6 +74,21 @@ namespace bounty_game
 			return .Ok;
 
 		}
+		public void LoadFromStringWrapped(String text,SDL.Color color, SDLTTF.Font* font,uint size)
+		{
+			free();
+			SDL.Surface* textSurface = SDLTTF.RenderText_Blended_Wrapped(font,text,color,size);
+			if(textSurface == null)
+				return;
+			mTexture = SDL.CreateTextureFromSurface(SDLManager.gGameRender,textSurface);
+			if(mTexture == null)
+				return;
+
+			mWidth = textSurface.w;
+			mHeight = textSurface.h;
+			SDL.FreeSurface(textSurface);
+
+		}
 
 		public int32 GetWidth
 		{

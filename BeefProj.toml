@@ -2,12 +2,17 @@ FileVersion = 1
 Dependencies = {corlib = "*", SDL2 = "*"}
 
 [Project]
-Name = "bounty-game"
+Name = "Slime-Slammer"
 TargetType = "BeefGUIApplication"
 StartupObject = "bounty_game.Program"
+DefaultNamespace = "bounty_game"
+Aliases = ["Slime slammer"]
+
+[Platform.Windows]
+IconFile = "D:\\Desktop\\bounty-game\\icon.ico"
 
 [Configs.Debug.Win64]
-PostBuildCmds = ["CopyFilesIfNewer(\"$(ProjectDir)/Assets\",\"$(WorkspaceDir)/SDL2_Tut\")\nCopyFilesIfNewer(\"$(BuildDir)\",\"$(ProjectDir)\")"]
+PostBuildCmds = ["CopyFilesIfNewer(\"$(ProjectDir)/Assets\",\"$(WorkspaceDir)/Slime-Slammer\")\nCopyFilesIfNewer(\"$(BuildDir)\",\"$(ProjectDir)\")"]
 
 [[Configs.Debug.Win64.DistinctOptions]]
 Filter = ""

@@ -14,13 +14,14 @@ namespace bounty_game
 		private static Texture BeefTitle;
 		private static Texture BookTitle;
 		private static SDLTTF.Font *DefaultFont;
+		public static SDLTTF.Font *LargeFont;
 		public static Texture GetBeefTitle()
 		{
 			return BeefTitle;
 		}
 		public static Texture GetBookTitle()
 		{
-			return BeefTitle;
+			return BookTitle;
 		}
 		public static SDLTTF.Font* GetDefaultFont()
 		{
@@ -44,6 +45,8 @@ namespace bounty_game
 				return .Err;
 			if(SDLTTF.Init() < 0)
 				return .Err;
+			if(SDLMixer.OpenAudio(44100,SDLMixer.MIX_DEFAULT_FORMAT,2,2048) < 0)
+				return .Err;
 			return .Ok;
 		}
 
@@ -55,6 +58,7 @@ namespace bounty_game
 			BookTitle.LoadFromMem(&BeefIncludes.bookhead,BeefIncludes.bookhead.Count*8);
 			SDL.RWOps* temp = SDL.RWFromMem(&BeefIncludes.sono_regular,BeefIncludes.sono_regular.Count*8);
 			DefaultFont = SDLTTF.OpenFontRW(temp,1,12);
+			LargeFont = SDLTTF.OpenFontRW(temp,1,30);
 
 		}
 
@@ -71,6 +75,7 @@ namespace bounty_game
 			SDL.Quit();
 			SDLImage.Quit();
 			SDLTTF.Quit();
+			SDLMixer.Quit();
 		}
 
 	}

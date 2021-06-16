@@ -1,125 +1,250 @@
 FileVersion = 1
 LastConfig = "Release"
 LastPlatform = "Win64"
-RecentFilesList = ["src\\TestScene.bf", "src\\Background.bf", "src\\Enemier.bf", "src\\Ball.bf", "c:\\Program Files\\BeefLang\\BeefLibs\\corlib\\src\\System.bf", "c:\\Program Files\\BeefLang\\BeefLibs\\corlib\\src\\IO\\Directory.bf"]
+RecentFilesList = ["src\\dog.bf", "src\\Arcade\\EndScene.bf", "src\\InfoScene.bf", "Disassembly", "src\\HeavySlime.bf", "src\\FastSlime.bf", "src\\MagiSlime.bf", "src\\TestScene.bf", "src\\Enemier.bf", "src\\Logic\\Bases\\Game.bf", "src\\Logic\\Bases\\Scene.bf", "src\\Lifebar.bf", "src\\Minimap.bf", "src\\Ball.bf", "src\\Arcade\\KillHud.bf", "src\\Title.bf", "src\\MainMenu\\MenuScene.bf", "c:\\Program Files\\BeefLang\\BeefLibs\\corlib\\src\\String.bf", "src\\MainMenu\\SceneSelector.bf", "c:\\Program Files\\BeefLang\\BeefLibs\\corlib\\src\\IO\\Directory.bf"]
 
 [MainWindow]
-X = 0
-Y = 0
-Width = 922
+X = 819
+Y = 1080
+Width = 1044
 Height = 1096
 ShowKind = "Maximized"
 
 [MainDockingFrame]
 Type = "DockingFrame"
+SplitType = 2
+
+[[MainDockingFrame.DockedWidgets]]
+RequestedWidth = 1919.2
+RequestedHeight = 963.0
+SizePriority = 963.0
+Type = "DockingFrame"
 SplitType = 1
 
-[[MainDockingFrame.DockedWidgets]]
-RequestedWidth = 297.0
-RequestedHeight = 461.0
+[[MainDockingFrame.DockedWidgets.DockedWidgets]]
+RequestedWidth = 263.0
+RequestedHeight = 963.0
 Type = "TabbedView"
 
-[[MainDockingFrame.DockedWidgets.Tabs]]
+[[MainDockingFrame.DockedWidgets.DockedWidgets.Tabs]]
 Active = true
 TabLabel = "Workspace"
-TabWidth = 111.6279
+TabWidth = 114.4444
 Type = "ProjectPanel"
 
-[[MainDockingFrame.DockedWidgets]]
-RequestedWidth = 959.24
+[[MainDockingFrame.DockedWidgets.DockedWidgets]]
+RequestedWidth = 1655.2
 RequestedHeight = 357.0
-SizePriority = 959.24
+SizePriority = 1655.2
 Type = "DockingFrame"
 SplitType = 2
 
-[[MainDockingFrame.DockedWidgets.DockedWidgets]]
+[[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets]]
 IsFillWidget = true
 RequestedWidth = 1774.24
-RequestedHeight = 1022.0
-SizePriority = 1022.0
+RequestedHeight = 536.2
+SizePriority = 536.2
 DefaultDocumentsTabbedView = true
 Type = "TabbedView"
 
-[[MainDockingFrame.DockedWidgets.DockedWidgets.Tabs]]
-TabLabel = "Background.bf"
-TabWidth = 117.4418
-Type = "SourceViewPanel"
-FilePath = "src\\Background.bf"
-CursorPos = 187
-ProjectName = "bounty-game"
+[[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
+TabLabel = "Disassembly"
+TabWidth = 121.1111
+Type = "DisassemblyPanel"
 
-[[MainDockingFrame.DockedWidgets.DockedWidgets.Tabs]]
-TabLabel = "Enemier.bf"
-TabWidth = 98.83718
+[[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
+TabLabel = "MagiSlime.bf"
+TabWidth = 106.6666
 Type = "SourceViewPanel"
-FilePath = "src\\Enemier.bf"
-CursorPos = 142
-ProjectName = "bounty-game"
+FilePath = "src\\MagiSlime.bf"
+CursorPos = 3550
+ProjectName = "Slime-Slammer"
 
-[[MainDockingFrame.DockedWidgets.DockedWidgets.Tabs]]
+[[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
+TabLabel = "FastSlime.bf"
+TabWidth = 99.99997
+Type = "SourceViewPanel"
+FilePath = "src\\FastSlime.bf"
+CursorPos = 3250
+ProjectName = "Slime-Slammer"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
+TabLabel = "HeavySlime.bf"
+TabWidth = 113.3333
+Type = "SourceViewPanel"
+FilePath = "src\\HeavySlime.bf"
+CursorPos = 3285
+ProjectName = "Slime-Slammer"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
+Active = true
+TabLabel = "dog.bf"
+TabWidth = 68.88887
+Type = "SourceViewPanel"
+FilePath = "src\\dog.bf"
+CursorPos = 1879
+VertPos = 1092.0
+ProjectName = "Slime-Slammer"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
+TabLabel = "Minimap.bf"
+TabWidth = 97.77775
+Type = "SourceViewPanel"
+FilePath = "src\\Minimap.bf"
+CursorPos = 747
+ProjectName = "Slime-Slammer"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
+TabLabel = "Lifebar.bf"
+TabWidth = 85.55553
+Type = "SourceViewPanel"
+FilePath = "src\\Lifebar.bf"
+CursorPos = 514
+ProjectName = "Slime-Slammer"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
 TabLabel = "Ball.bf"
-TabWidth = 73.25579
+TabWidth = 66.66665
 Type = "SourceViewPanel"
 FilePath = "src\\Ball.bf"
-CursorPos = 90
-ProjectName = "bounty-game"
+CursorPos = 774
+ProjectName = "Slime-Slammer"
 
-[[MainDockingFrame.DockedWidgets.DockedWidgets.Tabs]]
-Active = true
+[[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
+TabLabel = "MenuScene.bf"
+TabWidth = 114.4444
+Type = "SourceViewPanel"
+FilePath = "src\\MainMenu\\MenuScene.bf"
+CursorPos = 138
+ProjectName = "Slime-Slammer"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
+TabLabel = "String.bf"
+TabWidth = 79.99998
+Type = "SourceViewPanel"
+FilePath = "c:\\Program Files\\BeefLang\\BeefLibs\\corlib\\src\\String.bf"
+CursorPos = 13692
+ProjectName = "corlib"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
+TabLabel = "Title.bf"
+TabWidth = 69.99998
+Type = "SourceViewPanel"
+FilePath = "src\\Title.bf"
+CursorPos = 656
+ProjectName = "Slime-Slammer"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
+TabLabel = "Scene.bf"
+TabWidth = 79.99998
+Type = "SourceViewPanel"
+FilePath = "src\\Logic\\Bases\\Scene.bf"
+CursorPos = 2711
+ProjectName = "Slime-Slammer"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
+TabLabel = "Enemier.bf"
+TabWidth = 92.2222
+Type = "SourceViewPanel"
+FilePath = "src\\Enemier.bf"
+CursorPos = 1436
+ProjectName = "Slime-Slammer"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
+TabLabel = "SceneSelector.bf"
+TabWidth = 126.6666
+Type = "SourceViewPanel"
+FilePath = "src\\MainMenu\\SceneSelector.bf"
+CursorPos = 1600
+ProjectName = "Slime-Slammer"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
+TabLabel = "Game.bf"
+TabWidth = 78.88887
+Type = "SourceViewPanel"
+FilePath = "src\\Logic\\Bases\\Game.bf"
+CursorPos = 499
+ProjectName = "Slime-Slammer"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
+TabLabel = "InfoScene.bf"
+TabWidth = 103.3333
+Type = "SourceViewPanel"
+FilePath = "src\\InfoScene.bf"
+CursorPos = 1113
+ProjectName = "Slime-Slammer"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
+TabLabel = "EndScene.bf"
+TabWidth = 102.2222
+Type = "SourceViewPanel"
+FilePath = "src\\Arcade\\EndScene.bf"
+CursorPos = 528
+ProjectName = "Slime-Slammer"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
 TabLabel = "TestScene.bf"
-TabWidth = 100.9302
+TabWidth = 102.2222
 Type = "SourceViewPanel"
 FilePath = "src\\TestScene.bf"
-CursorPos = 534
-ProjectName = "bounty-game"
+CursorPos = 5171
+ProjectName = "Slime-Slammer"
 
-[[MainDockingFrame.DockedWidgets.DockedWidgets]]
+[[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
+TabLabel = "KillHud.bf"
+TabWidth = 88.88886
+Type = "SourceViewPanel"
+FilePath = "src\\Arcade\\KillHud.bf"
+CursorPos = 718
+ProjectName = "Slime-Slammer"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets]]
 RequestedWidth = 250.0
-RequestedHeight = 124.0
+RequestedHeight = 483.0
 Type = "TabbedView"
 
-[[MainDockingFrame.DockedWidgets.DockedWidgets.Tabs]]
+[[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
 TabLabel = "Find Results"
-TabWidth = 118.6046
+TabWidth = 120.0
 Type = "FindResultsPanel"
 
-[[MainDockingFrame.DockedWidgets.DockedWidgets.Tabs]]
+[[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
 TabLabel = "Threads"
-TabWidth = 95.34882
+TabWidth = 95.55553
 Type = "ThreadPanel"
 
-[[MainDockingFrame.DockedWidgets.DockedWidgets.Tabs]]
+[[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
 TabLabel = "Memory"
-TabWidth = 96.51162
+TabWidth = 98.88887
 Type = "MemoryPanel"
 Columns = 32
 RequestedWidth = 361.0
 
-[[MainDockingFrame.DockedWidgets.DockedWidgets.Tabs]]
+[[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
 TabLabel = "Watch"
-TabWidth = 86.0465
+TabWidth = 87.77776
 Type = "WatchPanel"
-Columns = [{Width = 335.0}, {Width = 82.0}, {Width = 82.0}]
-Items = ["Frametime", "delta", "gCurrentScene", "SceneEntities", "SceneHuds", "DebugHud", ""]
+Columns = [{Width = 351.0}, {Width = 86.0}, {Width = 86.0}]
+Items = ["Frametime", "delta", "gCurrentScene", "SceneEntities", "SceneHuds", "DebugHud", "maxhp", "maxhp", ""]
 
-[[MainDockingFrame.DockedWidgets.DockedWidgets.Tabs]]
+[[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
 TabLabel = "Call Stack"
-TabWidth = 105.8139
+TabWidth = 105.5555
 Type = "CallStackPanel"
 
-[[MainDockingFrame.DockedWidgets.DockedWidgets.Tabs]]
+[[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
 TabLabel = "Immediate"
-TabWidth = 110.4651
+TabWidth = 111.1111
 Type = "ImmediatePanel"
 
-[[MainDockingFrame.DockedWidgets.DockedWidgets.Tabs]]
+[[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
 Active = true
 TabLabel = "Output"
-TabWidth = 89.53487
+TabWidth = 92.22221
 Type = "OutputPanel"
 
-[[MainDockingFrame.DockedWidgets.DockedWidgets.Tabs]]
+[[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
 TabLabel = "Auto"
-TabWidth = 76.74418
+TabWidth = 78.88888
 Type = "AutoWatchPanel"
-Columns = [{Width = 284.0}, {Width = 662.0}, {Width = 82.0}]
+Columns = [{Width = 297.0}, {Width = 693.0}, {Width = 86.0}]
