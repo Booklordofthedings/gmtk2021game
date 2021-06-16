@@ -1,11 +1,11 @@
 FileVersion = 1
 LastConfig = "Release"
 LastPlatform = "Win64"
-RecentFilesList = ["src\\dog.bf", "src\\Arcade\\EndScene.bf", "src\\InfoScene.bf", "Disassembly", "src\\HeavySlime.bf", "src\\FastSlime.bf", "src\\MagiSlime.bf", "src\\TestScene.bf", "src\\Enemier.bf", "src\\Logic\\Bases\\Game.bf", "src\\Logic\\Bases\\Scene.bf", "src\\Lifebar.bf", "src\\Minimap.bf", "src\\Ball.bf", "src\\Arcade\\KillHud.bf", "src\\Title.bf", "src\\MainMenu\\MenuScene.bf", "c:\\Program Files\\BeefLang\\BeefLibs\\corlib\\src\\String.bf", "src\\MainMenu\\SceneSelector.bf", "c:\\Program Files\\BeefLang\\BeefLibs\\corlib\\src\\IO\\Directory.bf"]
+RecentFilesList = ["src\\IO\\BeefIncludes.bf", "Disassembly", "src\\dog.bf", "src\\Arcade\\EndScene.bf", "src\\InfoScene.bf", "Disassembly", "src\\HeavySlime.bf", "src\\FastSlime.bf", "src\\MagiSlime.bf", "src\\TestScene.bf", "src\\Enemier.bf", "src\\Logic\\Bases\\Game.bf", "src\\Logic\\Bases\\Scene.bf", "src\\Lifebar.bf", "src\\Minimap.bf", "src\\Ball.bf", "src\\Arcade\\KillHud.bf", "src\\Title.bf", "src\\MainMenu\\MenuScene.bf", "c:\\Program Files\\BeefLang\\BeefLibs\\corlib\\src\\String.bf"]
 
 [MainWindow]
-X = 819
-Y = 1080
+X = 0
+Y = 0
 Width = 1044
 Height = 1096
 ShowKind = "Maximized"
@@ -48,6 +48,15 @@ DefaultDocumentsTabbedView = true
 Type = "TabbedView"
 
 [[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
+Active = true
+TabLabel = "BeefIncludes.bf"
+TabWidth = 130.0
+Type = "SourceViewPanel"
+FilePath = "src\\IO\\BeefIncludes.bf"
+CursorPos = 117
+ProjectName = "Slime-Slammer"
+
+[[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
 TabLabel = "Disassembly"
 TabWidth = 121.1111
 Type = "DisassemblyPanel"
@@ -77,13 +86,12 @@ CursorPos = 3285
 ProjectName = "Slime-Slammer"
 
 [[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
-Active = true
 TabLabel = "dog.bf"
 TabWidth = 68.88887
 Type = "SourceViewPanel"
 FilePath = "src\\dog.bf"
 CursorPos = 1879
-VertPos = 1092.0
+VertPos = 882.0
 ProjectName = "Slime-Slammer"
 
 [[MainDockingFrame.DockedWidgets.DockedWidgets.DockedWidgets.Tabs]]
